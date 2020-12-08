@@ -1,0 +1,790 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<system name="$${FILENAME}">
+ <component
+   name="$${FILENAME}"
+   displayName="$${FILENAME}"
+   version="1.0"
+   description=""
+   tags=""
+   categories="System" />
+ <parameter name="bonusData"><![CDATA[bonusData 
+{
+   element AM_ModFrequency
+   {
+      datum _sortIndex
+      {
+         value = "3";
+         type = "int";
+      }
+      datum sopceditor_expanded
+      {
+         value = "0";
+         type = "boolean";
+      }
+   }
+   element AM_ModIndex
+   {
+      datum _sortIndex
+      {
+         value = "4";
+         type = "int";
+      }
+      datum sopceditor_expanded
+      {
+         value = "0";
+         type = "boolean";
+      }
+   }
+   element AM_ModWaveType
+   {
+      datum _sortIndex
+      {
+         value = "5";
+         type = "int";
+      }
+      datum sopceditor_expanded
+      {
+         value = "0";
+         type = "boolean";
+      }
+   }
+   element FM_ModDeviation
+   {
+      datum _sortIndex
+      {
+         value = "8";
+         type = "int";
+      }
+      datum sopceditor_expanded
+      {
+         value = "0";
+         type = "boolean";
+      }
+   }
+   element FM_ModFrequency
+   {
+      datum _sortIndex
+      {
+         value = "6";
+         type = "int";
+      }
+      datum sopceditor_expanded
+      {
+         value = "0";
+         type = "boolean";
+      }
+   }
+   element FM_ModWaveType
+   {
+      datum _sortIndex
+      {
+         value = "7";
+         type = "int";
+      }
+      datum sopceditor_expanded
+      {
+         value = "0";
+         type = "boolean";
+      }
+   }
+   element Frequency
+   {
+      datum _sortIndex
+      {
+         value = "0";
+         type = "int";
+      }
+      datum sopceditor_expanded
+      {
+         value = "1";
+         type = "boolean";
+      }
+   }
+   element OutputRelay
+   {
+      datum _sortIndex
+      {
+         value = "14";
+         type = "int";
+      }
+      datum sopceditor_expanded
+      {
+         value = "0";
+         type = "boolean";
+      }
+   }
+   element PM_ModFrequency
+   {
+      datum _sortIndex
+      {
+         value = "9";
+         type = "int";
+      }
+      datum sopceditor_expanded
+      {
+         value = "0";
+         type = "boolean";
+      }
+   }
+   element PM_ModIndex
+   {
+      datum _sortIndex
+      {
+         value = "11";
+         type = "int";
+      }
+      datum sopceditor_expanded
+      {
+         value = "0";
+         type = "boolean";
+      }
+   }
+   element PM_ModWaveType
+   {
+      datum _sortIndex
+      {
+         value = "10";
+         type = "int";
+      }
+      datum sopceditor_expanded
+      {
+         value = "0";
+         type = "boolean";
+      }
+   }
+   element PWM_Amplitude
+   {
+      datum _sortIndex
+      {
+         value = "12";
+         type = "int";
+      }
+      datum sopceditor_expanded
+      {
+         value = "0";
+         type = "boolean";
+      }
+   }
+   element PWM_Offset
+   {
+      datum _sortIndex
+      {
+         value = "13";
+         type = "int";
+      }
+      datum sopceditor_expanded
+      {
+         value = "0";
+         type = "boolean";
+      }
+   }
+   element PhaseOffset
+   {
+      datum _sortIndex
+      {
+         value = "1";
+         type = "int";
+      }
+      datum sopceditor_expanded
+      {
+         value = "0";
+         type = "boolean";
+      }
+   }
+   element WaveType
+   {
+      datum _sortIndex
+      {
+         value = "2";
+         type = "int";
+      }
+      datum sopceditor_expanded
+      {
+         value = "0";
+         type = "boolean";
+      }
+   }
+}
+]]></parameter>
+ <parameter name="clockCrossingAdapter" value="HANDSHAKE" />
+ <parameter name="device" value="10M08SAE144I7G" />
+ <parameter name="deviceFamily" value="MAX 10" />
+ <parameter name="deviceSpeedGrade" value="7" />
+ <parameter name="fabricMode" value="QSYS" />
+ <parameter name="generateLegacySim" value="false" />
+ <parameter name="generationId" value="0" />
+ <parameter name="globalResetBus" value="false" />
+ <parameter name="hdlLanguage" value="VERILOG" />
+ <parameter name="hideFromIPCatalog" value="false" />
+ <parameter name="lockedInterfaceDefinition" value="" />
+ <parameter name="maxAdditionalLatency" value="1" />
+ <parameter name="projectName" value="" />
+ <parameter name="sopcBorderPoints" value="false" />
+ <parameter name="systemHash" value="0" />
+ <parameter name="testBenchDutName" value="" />
+ <parameter name="timeStamp" value="0" />
+ <parameter name="useTestBenchNamingPattern" value="false" />
+ <instanceScript></instanceScript>
+ <interface
+   name="DDS0_AM_ModIndex_external_connection"
+   internal="AM_ModIndex.external_connection"
+   type="conduit"
+   dir="end" />
+ <interface
+   name="DDS0_AM_ModIndex_reset"
+   internal="AM_ModIndex.reset"
+   type="reset"
+   dir="end" />
+ <interface
+   name="DDS0_AM_ModIndex_s1"
+   internal="AM_ModIndex.s1"
+   type="avalon"
+   dir="end" />
+ <interface
+   name="DDS0_AM_ModWaveType_clk"
+   internal="AM_ModWaveType.clk"
+   type="clock"
+   dir="end" />
+ <interface
+   name="DDS0_AM_ModWaveType_external_connection"
+   internal="AM_ModWaveType.external_connection"
+   type="conduit"
+   dir="end" />
+ <interface
+   name="DDS0_AM_ModWaveType_reset"
+   internal="AM_ModWaveType.reset"
+   type="reset"
+   dir="end" />
+ <interface
+   name="DDS0_AM_ModWaveType_s1"
+   internal="AM_ModWaveType.s1"
+   type="avalon"
+   dir="end" />
+ <interface
+   name="DDS0_FM_ModDeviation_clk"
+   internal="FM_ModDeviation.clk"
+   type="clock"
+   dir="end" />
+ <interface
+   name="DDS0_FM_ModDeviation_external_connection"
+   internal="FM_ModDeviation.external_connection"
+   type="conduit"
+   dir="end" />
+ <interface
+   name="DDS0_FM_ModDeviation_reset"
+   internal="FM_ModDeviation.reset"
+   type="reset"
+   dir="end" />
+ <interface
+   name="DDS0_FM_ModDeviation_s1"
+   internal="FM_ModDeviation.s1"
+   type="avalon"
+   dir="end" />
+ <interface
+   name="DDS0_FM_ModFrequency_clk"
+   internal="FM_ModFrequency.clk"
+   type="clock"
+   dir="end" />
+ <interface
+   name="DDS0_FM_ModFrequency_external_connection"
+   internal="FM_ModFrequency.external_connection"
+   type="conduit"
+   dir="end" />
+ <interface
+   name="DDS0_FM_ModFrequency_reset"
+   internal="FM_ModFrequency.reset"
+   type="reset"
+   dir="end" />
+ <interface
+   name="DDS0_FM_ModFrequency_s1"
+   internal="FM_ModFrequency.s1"
+   type="avalon"
+   dir="end" />
+ <interface
+   name="DDS0_FM_ModWaveType_clk"
+   internal="FM_ModWaveType.clk"
+   type="clock"
+   dir="end" />
+ <interface
+   name="DDS0_FM_ModWaveType_external_connection"
+   internal="FM_ModWaveType.external_connection"
+   type="conduit"
+   dir="end" />
+ <interface
+   name="DDS0_FM_ModWaveType_reset"
+   internal="FM_ModWaveType.reset"
+   type="reset"
+   dir="end" />
+ <interface
+   name="DDS0_FM_ModWaveType_s1"
+   internal="FM_ModWaveType.s1"
+   type="avalon"
+   dir="end" />
+ <interface
+   name="DDS0_PM_ModFrequency_clk"
+   internal="PM_ModFrequency.clk"
+   type="clock"
+   dir="end" />
+ <interface
+   name="DDS0_PM_ModFrequency_external_connection"
+   internal="PM_ModFrequency.external_connection"
+   type="conduit"
+   dir="end" />
+ <interface
+   name="DDS0_PM_ModFrequency_reset"
+   internal="PM_ModFrequency.reset"
+   type="reset"
+   dir="end" />
+ <interface
+   name="DDS0_PM_ModFrequency_s1"
+   internal="PM_ModFrequency.s1"
+   type="avalon"
+   dir="end" />
+ <interface
+   name="DDS0_PM_ModIndex_clk"
+   internal="PM_ModIndex.clk"
+   type="clock"
+   dir="end" />
+ <interface
+   name="DDS0_PM_ModIndex_external_connection"
+   internal="PM_ModIndex.external_connection"
+   type="conduit"
+   dir="end" />
+ <interface
+   name="DDS0_PM_ModIndex_reset"
+   internal="PM_ModIndex.reset"
+   type="reset"
+   dir="end" />
+ <interface
+   name="DDS0_PM_ModIndex_s1"
+   internal="PM_ModIndex.s1"
+   type="avalon"
+   dir="end" />
+ <interface
+   name="DDS0_PM_ModWaveType_clk"
+   internal="PM_ModWaveType.clk"
+   type="clock"
+   dir="end" />
+ <interface
+   name="DDS0_PM_ModWaveType_external_connection"
+   internal="PM_ModWaveType.external_connection"
+   type="conduit"
+   dir="end" />
+ <interface
+   name="DDS0_PM_ModWaveType_reset"
+   internal="PM_ModWaveType.reset"
+   type="reset"
+   dir="end" />
+ <interface
+   name="DDS0_PM_ModWaveType_s1"
+   internal="PM_ModWaveType.s1"
+   type="avalon"
+   dir="end" />
+ <interface
+   name="DDS0_PWM_Amplitude_clk"
+   internal="PWM_Amplitude.clk"
+   type="clock"
+   dir="end" />
+ <interface
+   name="DDS0_PWM_Amplitude_external_connection"
+   internal="PWM_Amplitude.external_connection"
+   type="conduit"
+   dir="end" />
+ <interface
+   name="DDS0_PWM_Amplitude_reset"
+   internal="PWM_Amplitude.reset"
+   type="reset"
+   dir="end" />
+ <interface
+   name="DDS0_PWM_Amplitude_s1"
+   internal="PWM_Amplitude.s1"
+   type="avalon"
+   dir="end" />
+ <interface
+   name="DDS0_PWM_Offset_clk"
+   internal="PWM_Offset.clk"
+   type="clock"
+   dir="end" />
+ <interface
+   name="DDS0_PWM_Offset_external_connection"
+   internal="PWM_Offset.external_connection"
+   type="conduit"
+   dir="end" />
+ <interface
+   name="DDS0_PWM_Offset_reset"
+   internal="PWM_Offset.reset"
+   type="reset"
+   dir="end" />
+ <interface
+   name="DDS0_PWM_Offset_s1"
+   internal="PWM_Offset.s1"
+   type="avalon"
+   dir="end" />
+ <interface
+   name="DDS0_Relay_clk"
+   internal="OutputRelay.clk"
+   type="clock"
+   dir="end" />
+ <interface
+   name="DDS0_Relay_external_connection"
+   internal="OutputRelay.external_connection"
+   type="conduit"
+   dir="end" />
+ <interface
+   name="DDS0_Relay_reset"
+   internal="OutputRelay.reset"
+   type="reset"
+   dir="end" />
+ <interface
+   name="DDS0_Relay_s1"
+   internal="OutputRelay.s1"
+   type="avalon"
+   dir="end" />
+ <interface
+   name="dds1_am_modfrequency_clk"
+   internal="AM_ModFrequency.clk"
+   type="clock"
+   dir="end" />
+ <interface
+   name="dds1_am_modfrequency_external_connection"
+   internal="AM_ModFrequency.external_connection"
+   type="conduit"
+   dir="end" />
+ <interface
+   name="dds1_am_modfrequency_reset"
+   internal="AM_ModFrequency.reset"
+   type="reset"
+   dir="end" />
+ <interface
+   name="dds1_am_modfrequency_s1"
+   internal="AM_ModFrequency.s1"
+   type="avalon"
+   dir="end" />
+ <interface
+   name="dds1_am_modindex_clk"
+   internal="AM_ModIndex.clk"
+   type="clock"
+   dir="end" />
+ <interface
+   name="dds1_frequency_clk"
+   internal="Frequency.clk"
+   type="clock"
+   dir="end" />
+ <interface
+   name="dds1_frequency_external_connection"
+   internal="Frequency.external_connection"
+   type="conduit"
+   dir="end" />
+ <interface
+   name="dds1_frequency_reset"
+   internal="Frequency.reset"
+   type="reset"
+   dir="end" />
+ <interface
+   name="dds1_frequency_s1"
+   internal="Frequency.s1"
+   type="avalon"
+   dir="end" />
+ <interface
+   name="dds1_phaseoffset_clk"
+   internal="PhaseOffset.clk"
+   type="clock"
+   dir="end" />
+ <interface
+   name="dds1_phaseoffset_external_connection"
+   internal="PhaseOffset.external_connection"
+   type="conduit"
+   dir="end" />
+ <interface
+   name="dds1_phaseoffset_reset"
+   internal="PhaseOffset.reset"
+   type="reset"
+   dir="end" />
+ <interface
+   name="dds1_phaseoffset_s1"
+   internal="PhaseOffset.s1"
+   type="avalon"
+   dir="end" />
+ <interface
+   name="dds1_wavetype_clk"
+   internal="WaveType.clk"
+   type="clock"
+   dir="end" />
+ <interface
+   name="dds1_wavetype_external_connection"
+   internal="WaveType.external_connection"
+   type="conduit"
+   dir="end" />
+ <interface
+   name="dds1_wavetype_reset"
+   internal="WaveType.reset"
+   type="reset"
+   dir="end" />
+ <interface
+   name="dds1_wavetype_s1"
+   internal="WaveType.s1"
+   type="avalon"
+   dir="end" />
+ <module
+   name="AM_ModFrequency"
+   kind="altera_avalon_pio"
+   version="17.1"
+   enabled="1">
+  <parameter name="bitClearingEdgeCapReg" value="false" />
+  <parameter name="bitModifyingOutReg" value="false" />
+  <parameter name="captureEdge" value="false" />
+  <parameter name="clockRate" value="0" />
+  <parameter name="direction" value="Output" />
+  <parameter name="edgeType" value="RISING" />
+  <parameter name="generateIRQ" value="false" />
+  <parameter name="irqType" value="LEVEL" />
+  <parameter name="resetValue" value="0" />
+  <parameter name="simDoTestBenchWiring" value="false" />
+  <parameter name="simDrivenValue" value="0" />
+  <parameter name="width" value="32" />
+ </module>
+ <module
+   name="AM_ModIndex"
+   kind="altera_avalon_pio"
+   version="17.1"
+   enabled="1">
+  <parameter name="bitClearingEdgeCapReg" value="false" />
+  <parameter name="bitModifyingOutReg" value="false" />
+  <parameter name="captureEdge" value="false" />
+  <parameter name="clockRate" value="0" />
+  <parameter name="direction" value="Output" />
+  <parameter name="edgeType" value="RISING" />
+  <parameter name="generateIRQ" value="false" />
+  <parameter name="irqType" value="LEVEL" />
+  <parameter name="resetValue" value="0" />
+  <parameter name="simDoTestBenchWiring" value="false" />
+  <parameter name="simDrivenValue" value="0" />
+  <parameter name="width" value="32" />
+ </module>
+ <module
+   name="AM_ModWaveType"
+   kind="altera_avalon_pio"
+   version="17.1"
+   enabled="1">
+  <parameter name="bitClearingEdgeCapReg" value="false" />
+  <parameter name="bitModifyingOutReg" value="false" />
+  <parameter name="captureEdge" value="false" />
+  <parameter name="clockRate" value="0" />
+  <parameter name="direction" value="Output" />
+  <parameter name="edgeType" value="RISING" />
+  <parameter name="generateIRQ" value="false" />
+  <parameter name="irqType" value="LEVEL" />
+  <parameter name="resetValue" value="0" />
+  <parameter name="simDoTestBenchWiring" value="false" />
+  <parameter name="simDrivenValue" value="0" />
+  <parameter name="width" value="8" />
+ </module>
+ <module
+   name="FM_ModDeviation"
+   kind="altera_avalon_pio"
+   version="17.1"
+   enabled="1">
+  <parameter name="bitClearingEdgeCapReg" value="false" />
+  <parameter name="bitModifyingOutReg" value="false" />
+  <parameter name="captureEdge" value="false" />
+  <parameter name="clockRate" value="0" />
+  <parameter name="direction" value="Output" />
+  <parameter name="edgeType" value="RISING" />
+  <parameter name="generateIRQ" value="false" />
+  <parameter name="irqType" value="LEVEL" />
+  <parameter name="resetValue" value="0" />
+  <parameter name="simDoTestBenchWiring" value="false" />
+  <parameter name="simDrivenValue" value="0" />
+  <parameter name="width" value="32" />
+ </module>
+ <module
+   name="FM_ModFrequency"
+   kind="altera_avalon_pio"
+   version="17.1"
+   enabled="1">
+  <parameter name="bitClearingEdgeCapReg" value="false" />
+  <parameter name="bitModifyingOutReg" value="false" />
+  <parameter name="captureEdge" value="false" />
+  <parameter name="clockRate" value="0" />
+  <parameter name="direction" value="Output" />
+  <parameter name="edgeType" value="RISING" />
+  <parameter name="generateIRQ" value="false" />
+  <parameter name="irqType" value="LEVEL" />
+  <parameter name="resetValue" value="0" />
+  <parameter name="simDoTestBenchWiring" value="false" />
+  <parameter name="simDrivenValue" value="0" />
+  <parameter name="width" value="32" />
+ </module>
+ <module
+   name="FM_ModWaveType"
+   kind="altera_avalon_pio"
+   version="17.1"
+   enabled="1">
+  <parameter name="bitClearingEdgeCapReg" value="false" />
+  <parameter name="bitModifyingOutReg" value="false" />
+  <parameter name="captureEdge" value="false" />
+  <parameter name="clockRate" value="0" />
+  <parameter name="direction" value="Output" />
+  <parameter name="edgeType" value="RISING" />
+  <parameter name="generateIRQ" value="false" />
+  <parameter name="irqType" value="LEVEL" />
+  <parameter name="resetValue" value="0" />
+  <parameter name="simDoTestBenchWiring" value="false" />
+  <parameter name="simDrivenValue" value="0" />
+  <parameter name="width" value="8" />
+ </module>
+ <module name="Frequency" kind="altera_avalon_pio" version="17.1" enabled="1">
+  <parameter name="bitClearingEdgeCapReg" value="false" />
+  <parameter name="bitModifyingOutReg" value="false" />
+  <parameter name="captureEdge" value="false" />
+  <parameter name="clockRate" value="0" />
+  <parameter name="direction" value="Output" />
+  <parameter name="edgeType" value="RISING" />
+  <parameter name="generateIRQ" value="false" />
+  <parameter name="irqType" value="LEVEL" />
+  <parameter name="resetValue" value="0" />
+  <parameter name="simDoTestBenchWiring" value="false" />
+  <parameter name="simDrivenValue" value="0" />
+  <parameter name="width" value="32" />
+ </module>
+ <module
+   name="OutputRelay"
+   kind="altera_avalon_pio"
+   version="17.1"
+   enabled="1">
+  <parameter name="bitClearingEdgeCapReg" value="false" />
+  <parameter name="bitModifyingOutReg" value="false" />
+  <parameter name="captureEdge" value="false" />
+  <parameter name="clockRate" value="0" />
+  <parameter name="direction" value="Output" />
+  <parameter name="edgeType" value="RISING" />
+  <parameter name="generateIRQ" value="false" />
+  <parameter name="irqType" value="LEVEL" />
+  <parameter name="resetValue" value="0" />
+  <parameter name="simDoTestBenchWiring" value="false" />
+  <parameter name="simDrivenValue" value="0" />
+  <parameter name="width" value="1" />
+ </module>
+ <module
+   name="PM_ModFrequency"
+   kind="altera_avalon_pio"
+   version="17.1"
+   enabled="1">
+  <parameter name="bitClearingEdgeCapReg" value="false" />
+  <parameter name="bitModifyingOutReg" value="false" />
+  <parameter name="captureEdge" value="false" />
+  <parameter name="clockRate" value="0" />
+  <parameter name="direction" value="Output" />
+  <parameter name="edgeType" value="RISING" />
+  <parameter name="generateIRQ" value="false" />
+  <parameter name="irqType" value="LEVEL" />
+  <parameter name="resetValue" value="0" />
+  <parameter name="simDoTestBenchWiring" value="false" />
+  <parameter name="simDrivenValue" value="0" />
+  <parameter name="width" value="32" />
+ </module>
+ <module
+   name="PM_ModIndex"
+   kind="altera_avalon_pio"
+   version="17.1"
+   enabled="1">
+  <parameter name="bitClearingEdgeCapReg" value="false" />
+  <parameter name="bitModifyingOutReg" value="false" />
+  <parameter name="captureEdge" value="false" />
+  <parameter name="clockRate" value="0" />
+  <parameter name="direction" value="Output" />
+  <parameter name="edgeType" value="RISING" />
+  <parameter name="generateIRQ" value="false" />
+  <parameter name="irqType" value="LEVEL" />
+  <parameter name="resetValue" value="0" />
+  <parameter name="simDoTestBenchWiring" value="false" />
+  <parameter name="simDrivenValue" value="0" />
+  <parameter name="width" value="32" />
+ </module>
+ <module
+   name="PM_ModWaveType"
+   kind="altera_avalon_pio"
+   version="17.1"
+   enabled="1">
+  <parameter name="bitClearingEdgeCapReg" value="false" />
+  <parameter name="bitModifyingOutReg" value="false" />
+  <parameter name="captureEdge" value="false" />
+  <parameter name="clockRate" value="0" />
+  <parameter name="direction" value="Output" />
+  <parameter name="edgeType" value="RISING" />
+  <parameter name="generateIRQ" value="false" />
+  <parameter name="irqType" value="LEVEL" />
+  <parameter name="resetValue" value="0" />
+  <parameter name="simDoTestBenchWiring" value="false" />
+  <parameter name="simDrivenValue" value="0" />
+  <parameter name="width" value="8" />
+ </module>
+ <module
+   name="PWM_Amplitude"
+   kind="altera_avalon_pio"
+   version="17.1"
+   enabled="1">
+  <parameter name="bitClearingEdgeCapReg" value="false" />
+  <parameter name="bitModifyingOutReg" value="false" />
+  <parameter name="captureEdge" value="false" />
+  <parameter name="clockRate" value="0" />
+  <parameter name="direction" value="Output" />
+  <parameter name="edgeType" value="RISING" />
+  <parameter name="generateIRQ" value="false" />
+  <parameter name="irqType" value="LEVEL" />
+  <parameter name="resetValue" value="0" />
+  <parameter name="simDoTestBenchWiring" value="false" />
+  <parameter name="simDrivenValue" value="0" />
+  <parameter name="width" value="16" />
+ </module>
+ <module name="PWM_Offset" kind="altera_avalon_pio" version="17.1" enabled="1">
+  <parameter name="bitClearingEdgeCapReg" value="false" />
+  <parameter name="bitModifyingOutReg" value="false" />
+  <parameter name="captureEdge" value="false" />
+  <parameter name="clockRate" value="0" />
+  <parameter name="direction" value="Output" />
+  <parameter name="edgeType" value="RISING" />
+  <parameter name="generateIRQ" value="false" />
+  <parameter name="irqType" value="LEVEL" />
+  <parameter name="resetValue" value="0" />
+  <parameter name="simDoTestBenchWiring" value="false" />
+  <parameter name="simDrivenValue" value="0" />
+  <parameter name="width" value="16" />
+ </module>
+ <module
+   name="PhaseOffset"
+   kind="altera_avalon_pio"
+   version="17.1"
+   enabled="1">
+  <parameter name="bitClearingEdgeCapReg" value="false" />
+  <parameter name="bitModifyingOutReg" value="false" />
+  <parameter name="captureEdge" value="false" />
+  <parameter name="clockRate" value="0" />
+  <parameter name="direction" value="Output" />
+  <parameter name="edgeType" value="RISING" />
+  <parameter name="generateIRQ" value="false" />
+  <parameter name="irqType" value="LEVEL" />
+  <parameter name="resetValue" value="0" />
+  <parameter name="simDoTestBenchWiring" value="false" />
+  <parameter name="simDrivenValue" value="0" />
+  <parameter name="width" value="32" />
+ </module>
+ <module name="WaveType" kind="altera_avalon_pio" version="17.1" enabled="1">
+  <parameter name="bitClearingEdgeCapReg" value="false" />
+  <parameter name="bitModifyingOutReg" value="false" />
+  <parameter name="captureEdge" value="false" />
+  <parameter name="clockRate" value="0" />
+  <parameter name="direction" value="Output" />
+  <parameter name="edgeType" value="RISING" />
+  <parameter name="generateIRQ" value="false" />
+  <parameter name="irqType" value="LEVEL" />
+  <parameter name="resetValue" value="0" />
+  <parameter name="simDoTestBenchWiring" value="false" />
+  <parameter name="simDrivenValue" value="0" />
+  <parameter name="width" value="8" />
+ </module>
+ <interconnectRequirement for="$system" name="qsys_mm.clockCrossingAdapter" value="HANDSHAKE" />
+ <interconnectRequirement for="$system" name="qsys_mm.enableEccProtection" value="FALSE" />
+ <interconnectRequirement for="$system" name="qsys_mm.insertDefaultSlave" value="FALSE" />
+ <interconnectRequirement for="$system" name="qsys_mm.maxAdditionalLatency" value="1" />
+</system>

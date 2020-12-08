@@ -1,0 +1,293 @@
+# -------------------------------------------------------------------------- #
+#
+# Copyright (C) 2017  Intel Corporation. All rights reserved.
+# Your use of Intel Corporation's design tools, logic functions 
+# and other software and tools, and its AMPP partner logic 
+# functions, and any output files from any of the foregoing 
+# (including device programming or simulation files), and any 
+# associated documentation or information are expressly subject 
+# to the terms and conditions of the Intel Program License 
+# Subscription Agreement, the Intel Quartus Prime License Agreement,
+# the Intel FPGA IP License Agreement, or other applicable license
+# agreement, including, without limitation, that your use is for
+# the sole purpose of programming logic devices manufactured by
+# Intel and sold by Intel or its authorized distributors.  Please
+# refer to the applicable agreement for further details.
+#
+# -------------------------------------------------------------------------- #
+#
+# Quartus Prime
+# Version 17.1.0 Build 590 10/25/2017 SJ Lite Edition
+# Date created = 10:28:03  January 26, 2018
+#
+# -------------------------------------------------------------------------- #
+#
+# Notes:
+#
+# 1) The default values for assignments are stored in the file:
+#		DDS_FunctionGen_assignment_defaults.qdf
+#    If this file doesn't exist, see file:
+#		assignment_defaults.qdf
+#
+# 2) Altera recommends that you do not modify this file. This
+#    file is updated automatically by the Quartus Prime software
+#    and any changes you make may be lost or overwritten.
+#
+# -------------------------------------------------------------------------- #
+
+
+set_global_assignment -name FAMILY "MAX 10"
+set_global_assignment -name DEVICE 10M08SAE144I7G
+set_global_assignment -name TOP_LEVEL_ENTITY DDS_FunctionGen
+set_global_assignment -name ORIGINAL_QUARTUS_VERSION 17.1.0
+set_global_assignment -name PROJECT_CREATION_TIME_DATE "10:28:03  JANUARY 26, 2018"
+set_global_assignment -name LAST_QUARTUS_VERSION "18.1.0 Lite Edition"
+set_global_assignment -name PROJECT_OUTPUT_DIRECTORY output_files
+set_global_assignment -name MIN_CORE_JUNCTION_TEMP "-40"
+set_global_assignment -name MAX_CORE_JUNCTION_TEMP 100
+set_global_assignment -name DEVICE_FILTER_PACKAGE "ANY QFP"
+set_global_assignment -name DEVICE_FILTER_PIN_COUNT 144
+set_global_assignment -name ERROR_CHECK_FREQUENCY_DIVISOR 256
+set_global_assignment -name EDA_SIMULATION_TOOL "ModelSim-Altera (Verilog)"
+set_global_assignment -name EDA_TIME_SCALE "100 us" -section_id eda_simulation
+set_global_assignment -name EDA_OUTPUT_DATA_FORMAT "VERILOG HDL" -section_id eda_simulation
+set_global_assignment -name POWER_PRESET_COOLING_SOLUTION "23 MM HEAT SINK WITH 200 LFPM AIRFLOW"
+set_global_assignment -name POWER_BOARD_THERMAL_MODEL "NONE (CONSERVATIVE)"
+set_global_assignment -name FLOW_ENABLE_POWER_ANALYZER ON
+set_global_assignment -name POWER_DEFAULT_INPUT_IO_TOGGLE_RATE "12.5 %"
+set_global_assignment -name PARTITION_NETLIST_TYPE SOURCE -section_id Top
+set_global_assignment -name PARTITION_FITTER_PRESERVATION_LEVEL PLACEMENT_AND_ROUTING -section_id Top
+set_global_assignment -name PARTITION_COLOR 16764057 -section_id Top
+set_location_assignment PIN_26 -to i_clk_10Mhz
+set_instance_assignment -name IO_STANDARD "3.3 V SCHMITT TRIGGER" -to i_clk_10Mhz
+set_location_assignment PIN_27 -to i_extclk
+set_instance_assignment -name IO_STANDARD "3.3 V SCHMITT TRIGGER" -to i_extclk
+set_location_assignment PIN_30 -to o_LED_debug
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to o_LED_debug
+set_location_assignment PIN_113 -to o_DDS0_Gain
+set_instance_assignment -name IO_STANDARD "1.2 V" -to o_DDS0_Gain
+set_location_assignment PIN_111 -to o_DDS0_Offset
+set_instance_assignment -name IO_STANDARD "1.2 V" -to o_DDS0_Offset
+set_location_assignment PIN_69 -to o_DDS1_Gain
+set_instance_assignment -name IO_STANDARD "1.2 V" -to o_DDS1_Gain
+set_location_assignment PIN_70 -to o_DDS1_Offset
+set_instance_assignment -name IO_STANDARD "1.2 V" -to o_DDS1_Offset
+set_global_assignment -name EDA_TEST_BENCH_ENABLE_STATUS TEST_BENCH_MODE -section_id eda_simulation
+set_global_assignment -name EDA_NATIVELINK_SIMULATION_TEST_BENCH Keypad_tb -section_id eda_simulation
+set_global_assignment -name ENABLE_OCT_DONE OFF
+set_global_assignment -name EXTERNAL_FLASH_FALLBACK_ADDRESS 00000000
+set_global_assignment -name STRATIXV_CONFIGURATION_SCHEME "PASSIVE SERIAL"
+set_global_assignment -name USE_CONFIGURATION_DEVICE OFF
+set_global_assignment -name INTERNAL_FLASH_UPDATE_MODE "SINGLE COMP IMAGE"
+set_global_assignment -name CRC_ERROR_OPEN_DRAIN OFF
+set_global_assignment -name OUTPUT_IO_TIMING_NEAR_END_VMEAS "HALF VCCIO" -rise
+set_global_assignment -name OUTPUT_IO_TIMING_NEAR_END_VMEAS "HALF VCCIO" -fall
+set_global_assignment -name OUTPUT_IO_TIMING_FAR_END_VMEAS "HALF SIGNAL SWING" -rise
+set_global_assignment -name OUTPUT_IO_TIMING_FAR_END_VMEAS "HALF SIGNAL SWING" -fall
+set_location_assignment PIN_90 -to o_DDS0_DAC[11]
+set_instance_assignment -name IO_STANDARD "1.2 V" -to o_DDS0_DAC[11]
+set_location_assignment PIN_91 -to o_DDS0_DAC[10]
+set_instance_assignment -name IO_STANDARD "1.2 V" -to o_DDS0_DAC[10]
+set_location_assignment PIN_92 -to o_DDS0_DAC[9]
+set_instance_assignment -name IO_STANDARD "1.2 V" -to o_DDS0_DAC[9]
+set_location_assignment PIN_93 -to o_DDS0_DAC[8]
+set_instance_assignment -name IO_STANDARD "1.2 V" -to o_DDS0_DAC[8]
+set_location_assignment PIN_96 -to o_DDS0_DAC[7]
+set_instance_assignment -name IO_STANDARD "1.2 V" -to o_DDS0_DAC[7]
+set_location_assignment PIN_98 -to o_DDS0_DAC[6]
+set_instance_assignment -name IO_STANDARD "1.2 V" -to o_DDS0_DAC[6]
+set_location_assignment PIN_99 -to o_DDS0_DAC[5]
+set_instance_assignment -name IO_STANDARD "1.2 V" -to o_DDS0_DAC[5]
+set_location_assignment PIN_100 -to o_DDS0_DAC[4]
+set_instance_assignment -name IO_STANDARD "1.2 V" -to o_DDS0_DAC[4]
+set_location_assignment PIN_101 -to o_DDS0_DAC[3]
+set_instance_assignment -name IO_STANDARD "1.2 V" -to o_DDS0_DAC[3]
+set_location_assignment PIN_102 -to o_DDS0_DAC[2]
+set_instance_assignment -name IO_STANDARD "1.2 V" -to o_DDS0_DAC[2]
+set_location_assignment PIN_105 -to o_DDS0_DAC[1]
+set_instance_assignment -name IO_STANDARD "1.2 V" -to o_DDS0_DAC[1]
+set_location_assignment PIN_106 -to o_DDS0_DAC[0]
+set_instance_assignment -name IO_STANDARD "1.2 V" -to o_DDS0_DAC[0]
+set_instance_assignment -name IO_STANDARD "1.2 V" -to o_DDS0_DAC
+set_location_assignment PIN_118 -to o_DDS0_Relay
+set_instance_assignment -name IO_STANDARD "1.2 V" -to o_DDS0_Relay
+set_location_assignment PIN_119 -to o_DDS1_Relay
+set_instance_assignment -name IO_STANDARD "1.2 V" -to o_DDS1_Relay
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to altera_reserved_tck
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to altera_reserved_tdi
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to altera_reserved_tdo
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to altera_reserved_tms
+set_location_assignment PIN_41 -to o_LCD_BackLight_PWM
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to o_LCD_BackLight_PWM
+set_location_assignment PIN_58 -to o_LCD_Data[7]
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to o_LCD_Data[7]
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to o_LCD_Data[6]
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to o_LCD_Data[5]
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to o_LCD_Data[4]
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to o_LCD_Data[3]
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to o_LCD_Data[2]
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to o_LCD_Data[1]
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to o_LCD_Data[0]
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to o_LCD_Data
+set_location_assignment PIN_57 -to o_LCD_Data[6]
+set_location_assignment PIN_56 -to o_LCD_Data[5]
+set_location_assignment PIN_55 -to o_LCD_Data[4]
+set_location_assignment PIN_54 -to o_LCD_Data[3]
+set_location_assignment PIN_52 -to o_LCD_Data[2]
+set_location_assignment PIN_50 -to o_LCD_Data[1]
+set_location_assignment PIN_48 -to o_LCD_Data[0]
+set_instance_assignment -name IO_STANDARD "3.3 V SCHMITT TRIGGER" -to i_KeypadRows[3]
+set_instance_assignment -name IO_STANDARD "3.3 V SCHMITT TRIGGER" -to i_KeypadRows[2]
+set_instance_assignment -name IO_STANDARD "3.3 V SCHMITT TRIGGER" -to i_KeypadRows[1]
+set_instance_assignment -name IO_STANDARD "3.3 V SCHMITT TRIGGER" -to i_KeypadRows[0]
+set_instance_assignment -name IO_STANDARD "3.3 V SCHMITT TRIGGER" -to i_KeypadRows
+set_location_assignment PIN_120 -to i_KeypadRows[0]
+set_location_assignment PIN_123 -to i_KeypadRows[3]
+set_location_assignment PIN_122 -to i_KeypadRows[2]
+set_location_assignment PIN_121 -to i_KeypadRows[1]
+set_instance_assignment -name WEAK_PULL_UP_RESISTOR ON -to i_KeypadRows[3]
+set_instance_assignment -name WEAK_PULL_UP_RESISTOR ON -to i_KeypadRows[2]
+set_instance_assignment -name WEAK_PULL_UP_RESISTOR ON -to i_KeypadRows[1]
+set_instance_assignment -name WEAK_PULL_UP_RESISTOR ON -to i_KeypadRows[0]
+set_instance_assignment -name WEAK_PULL_UP_RESISTOR ON -to i_KeypadRows
+set_location_assignment PIN_131 -to o_keypadColumns[3]
+set_location_assignment PIN_130 -to o_keypadColumns[2]
+set_location_assignment PIN_127 -to o_keypadColumns[1]
+set_location_assignment PIN_124 -to o_keypadColumns[0]
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to o_keypadColumns[3]
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to o_keypadColumns[2]
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to o_keypadColumns[1]
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to o_keypadColumns[0]
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to o_keypadColumns
+set_instance_assignment -name IO_STANDARD "3.3 V SCHMITT TRIGGER" -to i_btnDisplay[1]
+set_location_assignment PIN_29 -to i_btnDisplay[0]
+set_location_assignment PIN_17 -to i_btnDisplay[1]
+set_location_assignment PIN_21 -to i_btnDisplay[2]
+set_instance_assignment -name IO_STANDARD "3.3 V SCHMITT TRIGGER" -to i_btnDisplay[0]
+set_instance_assignment -name IO_STANDARD "3.3 V SCHMITT TRIGGER" -to i_btnDisplay[2]
+set_location_assignment PIN_22 -to i_btnDisplay[3]
+set_instance_assignment -name IO_STANDARD "3.3 V SCHMITT TRIGGER" -to i_btnDisplay[3]
+set_location_assignment PIN_24 -to i_btnDisplay[4]
+set_instance_assignment -name IO_STANDARD "3.3 V SCHMITT TRIGGER" -to i_btnDisplay[4]
+set_location_assignment PIN_25 -to i_btnDisplay[5]
+set_instance_assignment -name IO_STANDARD "3.3 V SCHMITT TRIGGER" -to i_btnDisplay[5]
+set_instance_assignment -name IO_STANDARD "3.3 V SCHMITT TRIGGER" -to i_btnDisplay
+set_location_assignment PIN_74 -to o_DDS1_DAC[11]
+set_location_assignment PIN_75 -to o_DDS1_DAC[10]
+set_location_assignment PIN_76 -to o_DDS1_DAC[9]
+set_location_assignment PIN_77 -to o_DDS1_DAC[8]
+set_location_assignment PIN_79 -to o_DDS1_DAC[7]
+set_location_assignment PIN_81 -to o_DDS1_DAC[6]
+set_location_assignment PIN_84 -to o_DDS1_DAC[5]
+set_location_assignment PIN_85 -to o_DDS1_DAC[4]
+set_location_assignment PIN_86 -to o_DDS1_DAC[3]
+set_location_assignment PIN_87 -to o_DDS1_DAC[2]
+set_location_assignment PIN_88 -to o_DDS1_DAC[1]
+set_location_assignment PIN_89 -to o_DDS1_DAC[0]
+set_instance_assignment -name IO_STANDARD "1.2 V" -to o_DDS1_DAC[11]
+set_instance_assignment -name IO_STANDARD "1.2 V" -to o_DDS1_DAC[10]
+set_instance_assignment -name IO_STANDARD "1.2 V" -to o_DDS1_DAC[8]
+set_instance_assignment -name IO_STANDARD "1.2 V" -to o_DDS1_DAC[9]
+set_instance_assignment -name IO_STANDARD "1.2 V" -to o_DDS1_DAC[7]
+set_instance_assignment -name IO_STANDARD "1.2 V" -to o_DDS1_DAC[6]
+set_instance_assignment -name IO_STANDARD "1.2 V" -to o_DDS1_DAC[5]
+set_instance_assignment -name IO_STANDARD "1.2 V" -to o_DDS1_DAC[4]
+set_instance_assignment -name IO_STANDARD "1.2 V" -to o_DDS1_DAC[3]
+set_instance_assignment -name IO_STANDARD "1.2 V" -to o_DDS1_DAC[2]
+set_instance_assignment -name IO_STANDARD "1.2 V" -to o_DDS1_DAC[1]
+set_instance_assignment -name IO_STANDARD "1.2 V" -to o_DDS1_DAC[0]
+set_instance_assignment -name IO_STANDARD "1.2 V" -to o_DDS1_DAC
+set_location_assignment PIN_38 -to o_LED_CH0
+set_location_assignment PIN_39 -to o_LED_CH1
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to o_LED_CH0
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to o_LED_CH1
+set_global_assignment -name OPTIMIZATION_MODE BALANCED
+set_location_assignment PIN_141 -to i_Encoder[0]
+set_instance_assignment -name IO_STANDARD "3.3 V SCHMITT TRIGGER" -to i_Encoder[0]
+set_location_assignment PIN_140 -to i_Encoder[1]
+set_instance_assignment -name IO_STANDARD "3.3 V SCHMITT TRIGGER" -to i_Encoder[1]
+set_location_assignment PIN_135 -to i_Encoder[2]
+set_instance_assignment -name IO_STANDARD "3.3 V SCHMITT TRIGGER" -to i_Encoder[2]
+set_location_assignment PIN_134 -to i_Encoder[3]
+set_instance_assignment -name IO_STANDARD "3.3 V SCHMITT TRIGGER" -to i_Encoder[3]
+set_location_assignment PIN_132 -to i_Encoder[4]
+set_instance_assignment -name IO_STANDARD "3.3 V SCHMITT TRIGGER" -to i_Encoder[4]
+set_instance_assignment -name IO_STANDARD "3.3 V SCHMITT TRIGGER" -to i_Encoder
+set_global_assignment -name EDA_TEST_BENCH_NAME DDS_NIOS_II_tb -section_id eda_simulation
+set_global_assignment -name EDA_DESIGN_INSTANCE_NAME NA -section_id DDS_NIOS_II_tb
+set_global_assignment -name EDA_TEST_BENCH_MODULE_NAME DDS_NIOS_II_tb -section_id DDS_NIOS_II_tb
+set_global_assignment -name TIMING_ANALYZER_MULTICORNER_ANALYSIS ON
+set_global_assignment -name NUM_PARALLEL_PROCESSORS 4
+set_global_assignment -name EDA_TEST_BENCH_NAME DDS_Modulator_tb -section_id eda_simulation
+set_global_assignment -name EDA_DESIGN_INSTANCE_NAME NA -section_id DDS_Modulator_tb
+set_global_assignment -name EDA_TEST_BENCH_MODULE_NAME DDS_Modulator_tb -section_id DDS_Modulator_tb
+set_location_assignment PIN_32 -to i_btn_CH0_ONOFF
+set_instance_assignment -name IO_STANDARD "3.3 V SCHMITT TRIGGER" -to i_btn_CH0_ONOFF
+set_location_assignment PIN_33 -to i_btn_CH1_ONOFF
+set_instance_assignment -name IO_STANDARD "3.3 V SCHMITT TRIGGER" -to i_btn_CH1_ONOFF
+set_global_assignment -name EDA_TEST_BENCH_NAME DDS_WaveGenerator_tb -section_id eda_simulation
+set_global_assignment -name EDA_DESIGN_INSTANCE_NAME NA -section_id DDS_WaveGenerator_tb
+set_global_assignment -name EDA_TEST_BENCH_MODULE_NAME DDS_WaveGenerator_tb -section_id DDS_WaveGenerator_tb
+set_global_assignment -name EDA_TEST_BENCH_FILE verilog/DDS_NIOS_II_tb.v -section_id DDS_NIOS_II_tb
+set_global_assignment -name EDA_TEST_BENCH_FILE verilog/DDS_Modulator_tb.v -section_id DDS_Modulator_tb
+set_global_assignment -name EDA_TEST_BENCH_FILE verilog/DDS_WaveGenerator_tb.v -section_id DDS_WaveGenerator_tb
+set_global_assignment -name EDA_TEST_BENCH_NAME Keypad_tb -section_id eda_simulation
+set_global_assignment -name EDA_DESIGN_INSTANCE_NAME NA -section_id Keypad_tb
+set_global_assignment -name EDA_TEST_BENCH_MODULE_NAME Keypad_tb -section_id Keypad_tb
+set_global_assignment -name EDA_TEST_BENCH_FILE verilog/Keypad_tb.v -section_id Keypad_tb
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to sd_spi_MISO
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to sd_spi_MOSI
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to sd_spi_SCLK
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to sd_spi_SS_n
+set_location_assignment PIN_8 -to sd_spi_MISO
+set_location_assignment PIN_7 -to sd_spi_MOSI
+set_location_assignment PIN_10 -to sd_spi_SCLK
+set_location_assignment PIN_6 -to sd_spi_SS_n
+set_location_assignment PIN_43 -to o_LCD_Control[0]
+set_location_assignment PIN_44 -to o_LCD_Control[1]
+set_location_assignment PIN_45 -to o_LCD_Control[2]
+set_location_assignment PIN_46 -to o_LCD_Control[3]
+set_location_assignment PIN_47 -to o_LCD_Control[4]
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to o_LCD_Control[0]
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to o_LCD_Control[1]
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to o_LCD_Control[2]
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to o_LCD_Control[3]
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to o_LCD_Control[4]
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to o_LCD_Control
+set_instance_assignment -name IO_STANDARD "1.2 V" -to o_GPIO[9]
+set_instance_assignment -name IO_STANDARD "1.2 V" -to o_GPIO[8]
+set_instance_assignment -name IO_STANDARD "1.2 V" -to o_GPIO[7]
+set_instance_assignment -name IO_STANDARD "1.2 V" -to o_GPIO[3]
+set_instance_assignment -name IO_STANDARD "1.2 V" -to o_GPIO[0]
+set_instance_assignment -name IO_STANDARD "1.2 V" -to o_GPIO[1]
+set_instance_assignment -name IO_STANDARD "1.2 V" -to o_GPIO[2]
+set_instance_assignment -name IO_STANDARD "1.2 V" -to o_GPIO[4]
+set_instance_assignment -name IO_STANDARD "1.2 V" -to o_GPIO[5]
+set_instance_assignment -name IO_STANDARD "1.2 V" -to o_GPIO[6]
+set_instance_assignment -name IO_STANDARD "1.2 V" -to o_GPIO
+set_location_assignment PIN_61 -to o_GPIO[0]
+set_location_assignment PIN_62 -to o_GPIO[1]
+set_location_assignment PIN_64 -to o_GPIO[2]
+set_location_assignment PIN_65 -to o_GPIO[3]
+set_location_assignment PIN_66 -to o_GPIO[4]
+set_location_assignment PIN_78 -to o_GPIO[5]
+set_location_assignment PIN_80 -to o_GPIO[6]
+set_location_assignment PIN_110 -to o_GPIO[7]
+set_location_assignment PIN_112 -to o_GPIO[8]
+set_location_assignment PIN_114 -to o_GPIO[9]
+set_global_assignment -name CYCLONEII_OPTIMIZATION_TECHNIQUE BALANCED
+set_global_assignment -name PHYSICAL_SYNTHESIS_EFFORT EXTRA
+set_global_assignment -name QIP_FILE qsys/NiosII_Processor/synthesis/NiosII_Processor.qip
+set_global_assignment -name VERILOG_FILE verilog/PLL0.v
+set_global_assignment -name QIP_FILE verilog/PLL0.qip
+set_global_assignment -name SDC_FILE DDS_FunctionGen.sdc
+set_global_assignment -name VERILOG_FILE verilog/PWM.v
+set_global_assignment -name VERILOG_FILE verilog/Keypad.v
+set_global_assignment -name VERILOG_FILE verilog/DDS_WaveGenerator.v
+set_global_assignment -name VERILOG_FILE verilog/DDS_Modulator.v
+set_global_assignment -name VERILOG_FILE verilog/DDS_FunctionGen.v
+set_global_assignment -name VERILOG_FILE verilog/DDS_Core.v
+set_global_assignment -name SOURCE_FILE PLL0.ppf
+set_global_assignment -name VERILOG_FILE verilog/LCD_DMA_Interface.v
+set_global_assignment -name VERILOG_FILE verilog/SPI_DMA_Interface.v
+set_instance_assignment -name PARTITION_HIERARCHY root_partition -to | -section_id Top

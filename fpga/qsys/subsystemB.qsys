@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<system name="$${FILENAME}">
+ <component
+   name="$${FILENAME}"
+   displayName="$${FILENAME}"
+   version="1.0"
+   description=""
+   tags=""
+   categories="System" />
+ <parameter name="bonusData"><![CDATA[bonusData 
+{
+   element BackLight_PWM
+   {
+      datum _sortIndex
+      {
+         value = "2";
+         type = "int";
+      }
+   }
+   element Control
+   {
+      datum _sortIndex
+      {
+         value = "1";
+         type = "int";
+      }
+   }
+   element Data
+   {
+      datum _sortIndex
+      {
+         value = "0";
+         type = "int";
+      }
+   }
+}
+]]></parameter>
+ <parameter name="clockCrossingAdapter" value="HANDSHAKE" />
+ <parameter name="device" value="10M08SAE144I7G" />
+ <parameter name="deviceFamily" value="MAX 10" />
+ <parameter name="deviceSpeedGrade" value="7" />
+ <parameter name="fabricMode" value="QSYS" />
+ <parameter name="generateLegacySim" value="false" />
+ <parameter name="generationId" value="0" />
+ <parameter name="globalResetBus" value="false" />
+ <parameter name="hdlLanguage" value="VERILOG" />
+ <parameter name="hideFromIPCatalog" value="false" />
+ <parameter name="lockedInterfaceDefinition" value="" />
+ <parameter name="maxAdditionalLatency" value="1" />
+ <parameter name="projectName" value="" />
+ <parameter name="sopcBorderPoints" value="false" />
+ <parameter name="systemHash" value="0" />
+ <parameter name="testBenchDutName" value="" />
+ <parameter name="timeStamp" value="0" />
+ <parameter name="useTestBenchNamingPattern" value="false" />
+ <instanceScript></instanceScript>
+ <interface
+   name="BackLight_PWM_clk"
+   internal="BackLight_PWM.clk"
+   type="clock"
+   dir="end" />
+ <interface
+   name="BackLight_PWM_external_connection"
+   internal="BackLight_PWM.external_connection"
+   type="conduit"
+   dir="end" />
+ <interface
+   name="BackLight_PWM_reset"
+   internal="BackLight_PWM.reset"
+   type="reset"
+   dir="end" />
+ <interface
+   name="BackLight_PWM_s1"
+   internal="BackLight_PWM.s1"
+   type="avalon"
+   dir="end" />
+ <interface name="Control_clk" internal="Control.clk" type="clock" dir="end" />
+ <interface
+   name="Control_external_connection"
+   internal="Control.external_connection"
+   type="conduit"
+   dir="end" />
+ <interface name="Control_reset" internal="Control.reset" type="reset" dir="end" />
+ <interface name="Control_s1" internal="Control.s1" type="avalon" dir="end" />
+ <interface name="Data_clk" internal="Data.clk" type="clock" dir="end" />
+ <interface name="Data_reset" internal="Data.reset" type="reset" dir="end" />
+ <interface name="Data_s1" internal="Data.s1" type="avalon" dir="end" />
+ <interface
+   name="data_external_connection"
+   internal="Data.external_connection"
+   type="conduit"
+   dir="end" />
+ <module
+   name="BackLight_PWM"
+   kind="altera_avalon_pio"
+   version="17.1"
+   enabled="1">
+  <parameter name="bitClearingEdgeCapReg" value="false" />
+  <parameter name="bitModifyingOutReg" value="false" />
+  <parameter name="captureEdge" value="false" />
+  <parameter name="clockRate" value="0" />
+  <parameter name="direction" value="Output" />
+  <parameter name="edgeType" value="RISING" />
+  <parameter name="generateIRQ" value="false" />
+  <parameter name="irqType" value="LEVEL" />
+  <parameter name="resetValue" value="0" />
+  <parameter name="simDoTestBenchWiring" value="false" />
+  <parameter name="simDrivenValue" value="0" />
+  <parameter name="width" value="8" />
+ </module>
+ <module name="Control" kind="altera_avalon_pio" version="17.1" enabled="1">
+  <parameter name="bitClearingEdgeCapReg" value="false" />
+  <parameter name="bitModifyingOutReg" value="true" />
+  <parameter name="captureEdge" value="false" />
+  <parameter name="clockRate" value="0" />
+  <parameter name="direction" value="Output" />
+  <parameter name="edgeType" value="RISING" />
+  <parameter name="generateIRQ" value="false" />
+  <parameter name="irqType" value="LEVEL" />
+  <parameter name="resetValue" value="0" />
+  <parameter name="simDoTestBenchWiring" value="false" />
+  <parameter name="simDrivenValue" value="0" />
+  <parameter name="width" value="5" />
+ </module>
+ <module name="Data" kind="altera_avalon_pio" version="17.1" enabled="1">
+  <parameter name="bitClearingEdgeCapReg" value="false" />
+  <parameter name="bitModifyingOutReg" value="false" />
+  <parameter name="captureEdge" value="false" />
+  <parameter name="clockRate" value="0" />
+  <parameter name="direction" value="Output" />
+  <parameter name="edgeType" value="RISING" />
+  <parameter name="generateIRQ" value="false" />
+  <parameter name="irqType" value="LEVEL" />
+  <parameter name="resetValue" value="0" />
+  <parameter name="simDoTestBenchWiring" value="false" />
+  <parameter name="simDrivenValue" value="0" />
+  <parameter name="width" value="8" />
+ </module>
+ <interconnectRequirement for="$system" name="qsys_mm.clockCrossingAdapter" value="HANDSHAKE" />
+ <interconnectRequirement for="$system" name="qsys_mm.enableEccProtection" value="FALSE" />
+ <interconnectRequirement for="$system" name="qsys_mm.insertDefaultSlave" value="FALSE" />
+ <interconnectRequirement for="$system" name="qsys_mm.maxAdditionalLatency" value="1" />
+</system>

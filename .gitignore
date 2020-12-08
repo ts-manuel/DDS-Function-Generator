@@ -1,0 +1,35 @@
+_Local/
+
+#Ignore Circuit Studio intermediate files
+pcb/History/
+pcb/__Previews/
+pcb/Default Configuration/
+
+#Ignore Quartus intermediate files
+fpga/.qsys_edit
+fpga/db
+fpga/incremental_db
+fpga/output_files/
+!fpga/output_files/*.pof
+fpga/qsys/.qsys_edit
+fpga/qsys/NiosII_Processor/*.*
+fpga/qsys/NiosII_Processor/synthesis/*.debuginfo
+fpga/qsys/NiosII_Processor/synthesis/*.regmap
+*.bak
+*.qws
+
+#Ignore Eclipse files
+eclipse-workspace/
+fpga/software/DDS_FunctionGen_20Mhz/*.elf
+fpga/software/DDS_FunctionGen_20Mhz/*.map
+fpga/software/DDS_FunctionGen_20Mhz/*.objdump
+fpga/software/DDS_FunctionGen_20Mhz/*.flash
+fpga/software/DDS_FunctionGen_20Mhz/.settings
+fpga/software/DDS_FunctionGen_20Mhz/obj/
+fpga/software/DDS_FunctionGen_20Mhz/mem_init/hdl_sim/
+fpga/software/DDS_FunctionGen_20Mhz/mem_init/*.qip
+fpga/software/DDS_FunctionGen_20Mhz/mem_init/*.spd
+fpga/software/DDS_FunctionGen_20Mhz/mem_init/*_RAM_*.hex
+fpga/software/DDS_FunctionGen_20Mhz_bsp/.settings
+fpga/software/DDS_FunctionGen_20Mhz_bsp/obj/
+fpga/software/DDS_FunctionGen_20Mhz_bsp/flash/
